@@ -1,0 +1,30 @@
+{
+  "rooms": {
+    "cell_entrance": {
+      "description": "Your cell's entrance. You stand at the entrance of your dungeon.",
+      "exits": {"north": "cafeteria", "south": "gem_room", "east": "guard_room"},
+      "items": []
+    },
+    "cafeteria": {
+      "description": "A large hall with wooden tables where prisoers take their meals.",
+      "exits": {"south": "cell_entrance", "east": "gem_room", "north": "guard_room"},
+      "items": ["food", "cutleries and dishes"]
+    },
+    "gem_room": {
+      "description": "A sparkling room filled with gems.",
+      "exits": {"north": "cell_entrance"},
+      "items": ["diamonds", "gold dagger", "map"]
+    },
+    "hidden_room": {
+      "description": "A hidden room behind the shelves.",
+      "exits": {"north": "gem_room", "south": "secret_exit"},
+      "items": ["evidence"]
+    },
+    
+    "secret_exit": {
+      "description": "The secret exit leading out of the dungeon.",
+      "exits": {},
+      "items": []
+    }
+  }
+}
